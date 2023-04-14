@@ -1,0 +1,161 @@
+@import "sass/helpers/variables";
+@import "sass/helpers/mixins";
+@import "sass/layout/header";
+@import "sass/layout/header-trainee-user";
+@import "sass/components/buttons";
+@import "sass/components/favorite";
+@import "sass/pages/home";
+@import "sass/pages/courses";
+@import "sass/pages/commuinty";
+@import "sass/pages/course-details";
+@import "sass/pages/log-sign";
+@import "sass/pages/trainee-user";
+@import "sass/pages/trainee-user-account";
+@import "sass/pages/dash-sidebar";
+@import "sass/pages/dash-home";
+@import "sass/pages/dash-pages";
+@import "sass/pages/provider-corporate-user";
+@import "sass/pages/add-categeroy-ask";
+
+@import "sass/helpers/respoinsive-text";
+
+body{
+.soha{
+
+svg path:hover
+  {
+  margin: 15px;
+    fill: red;
+  }}
+
+  font-family: 'Roboto';
+  color: $textBodyColor;
+  background-color: $backgroundColor;
+}
+.pages{
+  padding-top:($headerHeight +30) ;
+}
+.page-top{
+  padding-top:($headerHeight - 34);
+  //background-color: #F4F4F4
+
+}
+.pages-dash{
+  padding-top:($headerHeight) ;
+}
+
+a{
+  color: $textBodyColor;
+  &:hover{
+    text-decoration: none;
+color: $borderColor;
+  }
+}
+
+.container:not(header .container){
+  padding: 0 5rem ;
+
+  @media (min-width: $minLarge) {
+    padding: 0 7rem ;
+  }
+  @media (max-width: 576px) {
+    padding: 0 1rem ;
+  }
+}
+
+.dash-board .container:not(header .container){
+  //padding: 0 5rem ;
+
+  //@media (min-width: $minSmall) {
+  //  padding: 0 7rem ;
+  //}
+  @media (max-width: $minSmall +13) {
+    padding: 0px 1rem 0 4.7rem;
+  }
+}
+
+
+
+
+.card{
+  border: none;
+  border-radius: 10px;
+}
+
+form{
+  input,textarea,select {
+    background-color: $backgroundColor !important;
+  }}
+
+article{
+  border-radius: 6px;
+  background-color: white;
+  .price-and-rate{
+    .fa-star{
+      color: #FFE600;
+    }
+  h6{
+    background-color: $borderColor;
+    padding:  2px 20px;
+    color: white;
+    border-radius: 5px;
+    font-weight: normal;
+  }}
+}
+
+.price-and-rate{
+  .questions{
+    h6{
+
+      padding:  2px 5px;
+
+    }
+  }
+}
+span.name{
+  color: black;
+  text-transform: capitalize;
+  font-size: 15px;
+
+}
+ul{
+  list-style: none;
+}
+
+.overlay{
+  @include overlay;
+  background-color: rgba(red,.1);
+  z-index: 2;
+  color: white;
+}
+
+
+.dropdown-item{
+  text-transform: capitalize;
+}
+
+.dropdown-menu{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.dropdown-item:focus,  .dropdown-item:hover {
+  background-color: #E9EAEB !important;
+}
+.dropdown-menu .dropdown-item:active {
+  color: #212529;
+}
+.dropdown-item {
+
+  padding: 0.45rem 1.5rem;}
+
+.canves-holder {
+  position: relative;
+}
+.canves-holder > canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+@import "sass/layout/footer";

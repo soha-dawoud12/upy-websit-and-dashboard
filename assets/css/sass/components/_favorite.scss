@@ -1,0 +1,47 @@
+.courses{
+  /* Rating Star Widgets Style */
+  .rating-stars {
+
+    padding-bottom: 14px;
+    line-height: 0;
+  }
+  .rating-stars ul > li.star > i.fa {
+    font-size:1rem;
+    color:$cardColor;
+  }
+
+  .rating-stars ul > li.star.hover > i.fa {
+    color:#FFE600;
+  }
+  .rating-stars ul > li.star.selected > i.fa {
+    color:#FFE600;
+  }
+  .rating-stars ul > li.active-star > i.fa{
+    color:#FFE600;
+  }
+
+
+.type-courses {
+i.heart-general{
+  font-size: 22px;
+  color: #EC5E4B;
+}
+  .heart {
+    font-size: 22px;
+    //color: $textBodyColor;
+    cursor: pointer;
+
+  }
+
+
+i.heart.far{
+  color: $textBodyColor;
+}
+i.heart.fas{
+  color: #EC5E4B;
+}
+}}
+i.heart-general{
+  font-size: 21px;
+  //color: #EC5E4B;
+}

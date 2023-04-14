@@ -1,0 +1,113 @@
+button{
+  text-transform: capitalize;
+}
+.btn-modal{
+  outline: 0;
+}
+.modal-footer{
+  button{
+    text-transform: capitalize;
+  }
+}
+
+header {
+
+  button.log-in-search{
+    border-color: $borderColor;
+    background-color: rgba(68,104,236,.14);
+    font-size: 15px;
+    &:hover{
+      color:$borderColor;
+
+    }}
+}
+.log-signup{
+  button.log-in-search{
+    font-weight: bold;
+    background-color: rgba(68,104,236,.14);
+
+    &:hover{
+      background-color: white;
+
+    }}
+}
+button.log-in-search{
+  border-color: $borderColor;
+  color: $borderColor;
+  font-size: 15px;
+  &:hover{
+    background-color: rgba(68,104,236,.14);
+color: $borderColor;
+}}
+
+.courses{
+  .buttons-courses{
+    button.course{
+      border: none;
+      border-radius: 20px;
+      background-color: $cardColor;
+      color: $textBodyColor;
+      font-size: 16px;
+      margin: 4px;
+      &:hover ,&:focus{
+        background-color: $borderColor;
+        color: white;
+      }
+
+    }
+    button.course.selected{
+      background-color: $borderColor;
+      color: white;
+    }
+  }
+}
+
+  h6.price{
+    margin-top: -13px;
+    @media (max-width: $maxMobile){
+      font-size: 16px;
+
+    }
+  }
+  button{
+    //width: 154px;
+  }
+  button.enroll{
+    background-color: $borderColor;
+    color: white;
+  }
+  button.share{
+//color: black;
+//background-color: white;
+    border: 1px solid $grayColor;
+    &:hover{
+      background-color: $cardColor;
+      color: black;
+    }
+  }
+
+  .modal-content{
+    border-radius: 10px;
+    .modal-body{
+
+
+    }
+  }
+
+.btn-social{
+  button{
+    border-color:$formColor;
+    &.facebook ,&.google{
+      color: #040506;
+      &:hover{
+        color:white;
+      &.facebook{
+        background-color: #1977F3;
+
+      }
+        &.google{
+          background-color: #C85748;
+        }
+
+  }
+}}}

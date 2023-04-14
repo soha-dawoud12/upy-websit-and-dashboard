@@ -1,0 +1,371 @@
+.home {
+
+.section-1 {
+  .main-home{
+
+
+    @media (min-width: 992px) {
+      .col-lg-5 {
+        left: 5rem;
+        padding-right: 0;
+        top: 1rem;
+      }
+      .col-lg-7{
+        right: 5rem;
+        padding-left: 0;
+      }
+
+      .container{
+        padding: initial;
+      }
+    }
+
+    @media (min-width: $minLarge) {
+      .col-lg-5 {
+        left: 7rem;
+        top: 3rem;
+
+      }
+      .col-lg-7{
+        right: 7rem;
+
+      }
+
+    }
+
+
+
+  }
+}
+  h1, h2, h3, h4, h5, h6 {
+    @include head;
+    text-transform: uppercase;
+  }
+}
+
+h1, h6, h2, h5,h4 {
+  @include head;
+  text-transform: capitalize;
+
+}
+
+
+.head-with-line {
+  position: relative;
+
+  h1, h2 {
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      //padding-left: .7rem;
+      height: 100%;
+      width: 3px;
+      background-color: $primaryColor;
+    }
+  }
+
+}
+
+.search form .input-search {
+  position: relative;
+
+  .btn-search-icon {
+
+    border: none;
+    background-color: $backgroundColor;
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    color: $grayColor;
+    outline: 0;
+  }
+
+  input {
+    background-color: $backgroundColor;
+  }
+
+}
+
+.section-1 {
+  .swiper-1 {
+    position: relative;
+
+    .swiper-slide {
+      width: 120px;
+      height: 125px;
+
+      img {
+        max-width: 130px !important;
+        //height: 135px;
+      }
+
+      /* Center slide text vertically */
+
+
+      display: flex;
+
+      align-items: center;
+    }
+
+  }
+
+
+  a.down {
+    cursor: pointer;
+    padding: 10px;
+  }
+}
+
+.section-2 {
+  .line-under-head {
+    position: relative;
+
+    h5 {
+
+      &:before {
+        position: absolute;
+        content: "";
+        background-color: $primaryColor;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: 0px;
+        margin-bottom: -6px;
+      }
+    }
+  }
+
+  .join-us {
+    padding: 0 80px;
+    @media (max-width: $maxMobile) {
+      padding: 0 10px;
+    }
+
+    .card-body{
+      @media (min-width: $minLarge) {
+        padding: 2.9rem;
+      }
+    }
+    p {
+      color: $primaryColor;
+    }
+
+    .card img {
+      margin-bottom: 15px;
+      max-width: 55px;
+      max-height: 55px;
+    }
+
+    .container {
+      padding: 0 100px 0 100px;
+    }
+
+    .card {
+      background-color: $cardColor;
+
+      &.card-1:hover {
+        @include hoverCard;
+        background-color: #6B49E9;
+      }
+
+      &.card-2:hover {
+        @include hoverCard;
+        background-color: #65CFA4;
+
+      }
+
+      &.card-3:hover {
+        @include hoverCard;
+        background-color: #9C4CCA;
+
+      }
+
+      &.card-4:hover {
+        @include hoverCard;
+        background-color: #C85748;
+
+      }
+
+      p {
+        width: 80%;
+        margin: auto;
+        padding-top: 4px;
+      }
+    }
+  }
+}
+
+.section-3 {
+  .features {
+    background-color: $cardColor;
+    margin-top: -6px;
+
+    .card-feature {
+      margin: 22px 22px 17px 22px;
+    }
+
+    .card {
+
+
+      .card-body {
+        position: relative;
+        padding: .5rem;
+
+        .circle-img {
+          position: absolute;
+          border-radius: 50%;
+          top: -22%;
+          border: 4px solid #fff;
+          background-color: $cardColor;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 11px;
+          width: 82px;
+          height: 82px;
+display: flex;
+
+
+        @media (min-width: $minLarge) {
+          top: -27%;
+          width: 112px;
+          height: 112px;
+          padding: 16px;}
+        }
+        .card-title {
+          margin-top: 40px;
+          @media (min-width: $minLarge) {
+            margin-top: 56px;}
+        }
+        }
+
+    }
+  }
+}
+
+.section-4 {
+  .testimonials {
+    background-color: $cardColor;
+
+    .swiper-wrapper {
+      margin-top: 10px;
+    }
+
+    .swiper-container {
+
+      width: 40%;
+      height: 100%;
+      margin: auto;
+      position: relative;
+      //border-radius: 10px;
+      @media (min-width: $minLarge) {
+        width: 35%;
+      }
+      @media (max-width: 1024px) {
+        width: 80%;
+      }
+      @media (max-width: $maxMobile) {
+        width: 100%;
+      }
+    }
+
+    .swiper-slide {
+      background: #fff;
+      border-radius: 10px;
+      margin-top: 60px;
+    }
+
+
+  }
+
+  .card-feature {
+    margin: 22px 22px 17px 22px;
+  }
+
+  .card {
+    //border-radius: 10px;
+
+    .card-body {
+      position: relative;
+      padding: .5rem;
+
+      .circle-img {
+        position: absolute;
+        border-radius: 50%;
+        top: -5rem;
+        border: 4px solid #fff;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 110px;
+        height: 110px;
+
+      }
+
+      .card-title {
+        margin-top: 40px;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+}
+
+
+.section-5 {
+  form {
+
+    width: 50%;
+
+    @media (min-width: $minLarge) {
+      width: 40%;
+    }
+    @media (max-width: 1200px) {
+      width: 80%;
+    }
+    @media (max-width: $maxMobile) {
+      width: 100%;
+    }
+
+    button {
+      background-color: $primaryColor;
+      color: white;
+
+      &:hover {
+        background-color: $grayColor;
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+
+
+.swiper-pagination {
+
+  width: 100% !important;
+  height: 10px;
+  margin-top: 3%;
+
+  .swiper-pagination-bullet {
+    //
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $textBodyColor;
+    //border: 1.3px solid $primaryColor;
+    margin: 2px;
+    z-index: 2;
+    cursor: pointer;
+    &-active {
+      background-color: $primaryColor;
+      transition-duration: 300ms;
+    }
+  }
+}
+.say{
+  .swiper-pagination {
+
+
+    margin-top: -4.5%;}
+}

@@ -1,0 +1,35 @@
+footer{
+  background-color: white;
+  border-top: 1px solid #eee;
+  .line-under-footer{
+    position: relative;
+    h5{
+      font-weight: normal;
+      margin-bottom: 15px;
+
+      &:before{
+        content: "";
+        position: absolute;
+        background-color: $primaryColor;
+        width: 30px;
+        height: 2px;
+        left: 0;
+        bottom: -7px;
+      }
+    }
+  }
+
+  ul,p{
+  padding-left: 10px !important;
+    font-size: 14px;
+    @media (min-width: $minLarge) {
+
+        font-size: 16px;
+      }
+}
+
+  .copy{
+    color: $textBodyColor;
+    background-color: #EEEEEE;
+  }
+}

@@ -1,0 +1,753 @@
+
+
+.notifaction{
+ a:visited{
+    color: black;
+  }
+
+  .box::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 20px
+  }
+
+  .box::-webkit-scrollbar
+  {
+    width: 5px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+
+  }
+
+  .box::-webkit-scrollbar-thumb
+  {
+    background-color: $primaryColor;
+    border: 2px solid $primaryColor;
+    border-radius: 20px
+  }
+
+
+  .icons{
+    display: inline;
+    float: right
+  }
+
+  .notification{
+    padding-top: 12px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .number{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 4px;
+    left: 21px;
+    padding: 0px;
+    font-size: 14px;
+    border: 1px solid $borderColor;
+  }
+
+  .number:empty {
+    display: none;
+  }
+
+  .notBtn{
+
+    cursor: pointer
+  }
+
+  .far{
+    font-size: 25pt;
+    padding-bottom: 10px;
+    color: black;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .box{
+    border: 1px solid $formColor;
+    width: 400px;
+    height: 0px;
+    border-radius: 10px;
+    //transition: 0.5s;
+    position: absolute;
+    overflow-y: scroll;
+    padding: 0px;
+    right: 0 ;
+    margin-top: 5px;
+    background-color: white;
+    cursor: context-menu;
+    display: block;
+    display: none;
+    @media (max-width: $maxMobile) {
+      width: 220px;
+    }
+
+  }
+
+
+  .notBtn > .box{
+    height: 50vh
+  }
+
+  .content{
+    padding: 20px;
+    color: black;
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  //.top{
+  //  color: black;
+  //  padding: 10px
+  //}
+
+  .display{
+    position: relative;
+  }
+
+  .cont{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:white;
+  }
+
+  .cont:empty{
+    display: none;
+  }
+  .sec{
+    padding: 10px 10px;
+
+    transition: 0.5s;
+    margin: 8px;
+    border-radius: 10px;
+    background-color: $backgroundColor;
+  }
+
+  .profCont{
+    padding-right: 5px;
+    border-right: 1px dashed $textBodyColor;
+    @media (max-width:$maxMobile) {
+     font-size: 12px;
+    }
+  }
+
+
+  .txt{
+    padding-left: 5px;
+    @media (max-width:$maxMobile) {
+      font-size: 12px;
+    }
+  }
+
+
+  .new{
+
+    background-color: $primaryColor;
+
+
+    a{
+      color: white;
+    }
+    &:hover{
+      background-color: $cardColor;
+    }
+  }
+
+
+
+  .sec:hover{
+
+    background-color: $primaryColor;
+    a{
+      color: white;
+    }
+  }
+
+
+
+}
+
+.account-settings{
+span.replace{
+  color:  $borderColor;
+  font-size: 14px;
+  @media (min-width: $minLarge) {
+    font-size: 20px !important;
+  }
+}
+
+  .payment-type{
+
+    ul{
+      li{
+        h6{
+          font-weight: normal;
+        }}
+    }}
+
+
+  .replace-img{
+
+    @mixin object-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    $circleSize: 120px;
+
+
+    $radius: 50%;
+    $shadow: 0 0 10px 0 rgba(255,255,255,.35);
+    $fontColor: rgb(250,250,250);
+
+    .profile-pic {
+      color: transparent;
+      transition: all .3s ease;
+      @include object-center;
+      position: relative;
+      transition: all .3s ease;
+      height: $circleSize;
+      width: $circleSize;
+      @media (min-width: $minLarge) {
+        height: 150px;
+        width:  150px;
+      }
+      input {
+        display: none;
+      }
+
+      img {
+        position: absolute;
+        object-fit: cover;
+        width: $circleSize;
+        height: $circleSize;
+        box-shadow: $shadow;
+        border-radius: $radius;
+        z-index: 0;
+
+        border: 1px solid rgba($formColor,.5) ;
+        padding: 10px;
+        display: flex;
+        @media (min-width: $minLarge) {
+          height: 150px;
+          width:  150px;
+        }
+
+      }
+
+      .-label {
+        cursor: pointer;
+        height: $circleSize;
+        width: $circleSize;
+      }
+
+      &:hover {
+        .-label {
+          @include object-center;
+          background-color: rgba($primaryColor,.6);
+          z-index: 10000;
+          color: $fontColor;
+          transition: background-color .2s ease-in-out;
+          border-radius: $radius;
+          margin-bottom: 0;
+          @media (min-width: $minLarge) {
+            height: 150px;
+            width:  150px;
+          }
+        }
+      }
+
+
+      span {
+        display: inline-flex;
+        //padding: .2em;
+        font-size: 13px;
+
+
+        @media (min-width: $minLarge) {
+       font-size: 20px;
+        }
+      }
+    }
+
+
+  }
+
+  form input, form textarea, form select {
+    background-color: #ffffff !important;
+  }
+  .buttons-close{
+    button{
+      background-color: #EC5E4B;
+      color: white;
+    }
+  }
+  .agree-of-terms{
+    input ,label{
+      color: $borderColor;
+    }
+
+  }
+  #Payment-Record{
+    h6{
+      color: $borderColor;
+    }
+    color: #161C2A;
+
+    .order-data{
+      font-size: 14px;
+    }
+    .time{
+      border-left: 1px solid $textBodyColor;
+      margin-left: 40px;
+      padding: 0 5px;
+      @media (max-width: $maxMobile) {
+        margin-left: 20px;
+      }
+    }
+.order-number{
+  border-bottom: 1px solid $formColor;
+}
+  }
+}
+
+
+.trainee-user-profile{
+  .section-1{
+    .data-about-course{
+      span{
+        color: $borderColor;
+      }
+    }
+
+  }
+
+
+  .course-certificates ,.following{
+    ul{
+
+      li{
+        img{
+          //width: 42px;
+          //height: 42px;
+          //border-radius: 50%;
+          //margin-right: 5px;
+        }
+      }
+    }
+
+  }
+  .modal{
+    margin-top: -29px;
+    padding-right: 0 !important;
+    .modal-content {
+      margin-left: 525px;}
+
+    @media (min-width:1830px) {
+      .modal-content {
+        margin-left: 813px;}
+
+      .modal-dialog {
+        max-width: 400px;
+
+      }
+
+
+    }
+
+    @media (min-width:1520px)and(max-width:1825px) {
+      .modal-content {
+        margin-left: 685px;}
+    }
+
+    @media (max-width:1340px) {
+
+      .modal-content {
+        margin-left: 0;
+       }
+    }
+
+
+
+        ul {
+          padding: 0;
+        }
+
+    @media (max-width:1340px) {
+      margin-top: auto;
+    }
+    }
+
+
+
+}
+.my-Courses{
+  .breadcrumbs{
+    span{
+      //font-size: 20px;
+      line-height: 1.2;
+    }
+    span{
+      a.BreadCrumbMain{
+
+      }
+    }
+    span.second-bread{
+      color: $borderColor;
+
+    }
+  }
+}
+
+.multi-choice{
+  form{
+    color: #040506;
+
+    .question{
+     //border-bottom: 1px solid $cardColor;
+      //width: 80%;
+      margin: auto;
+      position: relative;
+&:before{
+  content: "";
+  position: absolute;
+  background-color:$cardColor;
+  height: 1px ;
+  width: 128%;
+  bottom: -7px;
+  left: 7px;
+  @media (min-width: $minLarge) {
+    width: 127%;
+  }
+  @media (max-width: $maxMedium) {
+    width: 107%;
+  }
+}
+      .choice{
+        flex: 0 0 47%;
+        width: 47%;
+        margin: 5px 7px;
+        @media (max-width: $maxMedium) {
+          flex: 0 0 100%;
+          width: 97%;
+        }
+      }
+      input{
+        margin: 5px;
+        cursor: pointer;
+      }
+      .box-choice{
+      @include input-style;
+        border: 1px solid $cardColor;
+
+      }
+      //input[type=submit]{ margin-top: 15px; }
+    }
+    button{
+      background-color:$borderColor;
+      color: white;
+    }
+  }
+  .selected {
+    @include input-style;
+    border :1.7px solid $borderColor;
+
+  }
+}
+
+.assessments{
+.data-about-course{
+  ul{
+    li.quiz{
+      a{ color: black;
+      }
+
+    }
+    li.assessment{
+      padding: 0;
+      .dropdown{
+        button{
+          padding: 5px 16px;
+        }
+
+      }
+     li.assessment {
+       button{
+         //background-color: white;
+         position: relative;
+         //color: black;
+       }
+
+             }
+      .dropdown-menu {
+        position: absolute;
+        min-width: 100%;
+      a:hover{
+        background-color: #EAEAEA;
+      }}
+
+
+
+
+
+      &:first-child{
+        color:$grayColor;
+      }
+    }
+    button.btn-active,li.btn-active{
+      background-color: $borderColor !important;
+      color: white !important;
+      cursor: pointer;
+      a{
+        color: white;
+      }
+    }
+
+  }
+}
+
+  li.assessment{
+
+    .Evaluations{
+
+
+      .dropdown-menu{
+        .dropdown-item{
+
+          padding: 0 !important;
+          text-align: center;
+        }
+
+      }
+    }
+  }
+}
+.evaluations{
+
+  .multi-choice{
+    form{
+      .question{
+
+    .choice{
+      flex: 0 0 11%;
+      width: 11%;
+      margin: 5px 7px;
+      @media (min-width: $minLarge) {
+        flex: 0 0 8%;
+        width: 8%;
+      }
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        width: 97%;
+      }
+    }
+  }
+
+    }
+  }
+}
+.quizes{
+  .table-responsive{
+    table{
+border-bottom: 1px solid #dee2e6;
+      th{
+        font-weight: normal;
+        color: #040506;
+      }
+      td{
+        &:first-child{
+          color: $borderColor;
+        }
+        &:last-child{
+          color: $borderColor;
+        }
+      }
+    }
+    @media (max-width: $minSmall) {
+      font-size: 12px;
+    }
+  }
+  form{
+    button.back{
+      background-color: white;
+      color:$borderColor ;
+      border: 1px solid $borderColor ;
+    }
+  }
+
+}
+.watch-img{
+  width: 38px;
+  margin: 2px 4px 2px 0;
+  img{
+    border-radius: 50%;
+  }
+}
+.video-completed{
+  background-color: $borderColor;
+ a,h6,span,div{
+    color: white;
+ }
+  a:hover{
+    color: $cardColor;
+  }
+}
+.progress{
+  position: absolute;
+  width: 30%;
+  bottom: 10px;
+  left: 58px
+
+
+}
+.video-link{
+
+
+  a{
+    border-left: 1px solid ;
+    padding-left: 4px;
+    font-size: 13px;
+    @media (min-width: $minLarge) {
+      font-size: 16px
+
+    }
+    &.isDisabled {
+      color: currentColor;
+      cursor: not-allowed;
+
+
+      text-decoration: none;
+    }
+    &.link-active{
+      color: $borderColor;
+
+    }
+    }
+
+}
+
+.exit{
+  background-color: $primaryColor;
+  border: $primaryColor;
+  color: white;
+}
+.e-learning-see-course{
+  .lessons{
+
+    height: 492px;
+    overflow: auto;
+    @media (min-width: $minLarge) {
+    height: 760px;}
+
+    .submenu{
+      display: none;
+    }
+
+    i.fas{
+      color: $primaryColor;
+    }
+    .submenu {
+      .submenu-item{
+        article:not(.video-completed){
+          &:hover{
+            background-color: #F4F4F4;
+            //color: white;
+            h6{
+              //color: white;
+            }
+          }
+        }
+      }
+    }
+    .weeks{
+      article{
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
+      }}
+    .watch-img {
+      width: 38px;
+      //margin-left: -38px;
+      margin: 2px 4px 2px -38px;
+    }
+
+
+  }
+    ::-webkit-scrollbar {
+      width: 14px;
+      background: $borderColor;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background:$cardColor;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      /* background: #888; */
+
+      background: $borderColor;
+
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      /* background: #555; */
+      background:rgba($borderColor ,.8);
+    }
+
+  .no-gutters{
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+
+
+
+
+  video{
+    //max-height: 480px;
+    @media (min-width: $minLarge) {
+      //max-height: 884px;
+    }
+  }
+  .video-block video {
+    border-radius: 0px;
+  }
+  .video-block {
+    position: relative;
+    max-height: 100%;
+  }
+  span.pause, span.play {
+
+    height: 99%;
+
+  }
+
+
+
+}
+
+img.img-course-certificates{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 5px;
+  @media (max-width: $maxMobile) {
+    width: 37px;
+    height: 37px;
+    margin-right: 3px;
+  }
+}

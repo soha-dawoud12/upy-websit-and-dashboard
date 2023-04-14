@@ -1,0 +1,63 @@
+.log-signup{
+  h1{
+    @include head;
+    text-transform: uppercase;
+  }
+  .not-account{
+    position: relative;
+    h5{
+font-weight: normal;
+
+    &:before{
+      position: absolute;
+      content: "";
+      width: 40%;
+      height: 1.5px;
+      left: 60%;
+      background-color: $formColor;
+      bottom: 50%;
+    }
+    &:after{
+      position: absolute;
+      content: "";
+      width: 40%;
+      height: 1.5px;
+      right: 60%;
+      background-color: $formColor;
+      bottom: 50%;
+    }}
+    }
+
+  .have-account{
+    a{
+      color: $borderColor;
+    }
+  }
+}
+
+.not-found-page{
+
+  .span-head-with-line {
+    position: relative;
+    span{
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+  &:before{
+    content: "";
+    position: absolute;
+    left: -10px;
+    height: 100%;
+    width: 3px;
+    background-color: #313653;
+    top: 0px;
+  }
+
+  strong{
+    font-size: 30px;
+
+  }
+  }
+}

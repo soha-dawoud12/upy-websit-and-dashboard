@@ -1,0 +1,314 @@
+.trainee-user{
+
+
+  .hero-first {
+    .row{
+      background-color: #F3F9FC;
+
+      .text-hero{
+        padding:  20px 0 0 20px;
+      }
+      .img-hero{
+        margin-top: -15px;
+      }
+    }
+
+
+  }
+
+
+
+
+
+.accordion{
+  border-radius: 6px;
+  .card{
+    background-color: #EAEAEA;
+  }
+  .card-header{
+
+      padding: 8px 0;
+
+    border-bottom: 1px solid white;
+    background-color: white;  }
+    .card-header.actives{
+
+        background-color: #EAEAEA;
+
+
+    }
+
+  .card-body{
+
+    color: black;
+    max-height: 200px;
+  }
+
+
+button.collapsible{
+
+  outline: none;
+  border-color: transparent;
+  &:focus{
+    outline: 0;
+  }
+}
+
+.collapsible:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  color: $primaryColor;
+  font-weight: bold;
+  //float: right;
+  //margin-left: 5px;
+  outline: none;
+  //display: flex;
+  //justify-content: end;
+}
+  .show:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f106";
+
+  }
+
+
+  .coll-scroll{
+    max-height: 200px;
+    overflow: auto;
+  }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+
+      background: $borderColor;
+      height: 15px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background:#FCFCFC;
+      border: 1px solid #FCFCFC;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      /* background: #888; */
+
+      background: $borderColor;
+
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      /* background: #555; */
+      background:rgba($borderColor ,.8);
+    }
+
+
+
+
+  }
+
+
+
+.tools{
+  position: relative;
+
+  ul{
+    li{
+      margin-bottom: 8px;
+    }
+  }
+  .circle-img {
+    position: absolute;
+    border-radius: 50%;
+    top: -15%;
+    border: 4px solid #fff;
+    background-color: #F3F9FC;
+    left: 70px;
+    transform: translateX(-50%);
+    padding: 11px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $minSmall) {
+     top: -10%;
+    }
+  }
+
+
+
+
+  .user-1{
+margin-bottom: 266px;
+    @media (max-width: $minSmall) {
+      margin-bottom: 15px;
+    }
+  }
+  .img-user-tools-1{
+    margin-left: 50px;
+    //margin-top: -20px;
+    position: absolute;
+    z-index: 5;
+    top: 253px;
+    right: -150px;
+    @media (min-width: $minLarge) {
+      top: 221px;
+    }
+    @media (max-width: $minSmall) {
+      position: relative;
+      top: auto;
+      right: auto;
+      margin-left: auto;
+    }
+
+  }
+  .user-2{
+    margin-right: 100px;
+    @media (max-width: $minSmall) {
+      margin-right: auto;
+    }
+  }
+
+
+  .img-user-tools-2{
+    //margin-right: 50px;
+    margin-top: 100px;
+    @media (max-width: $minSmall) {
+      margin-top: 15px;
+      margin-bottom: 68px;
+    }
+  }
+}
+
+
+
+
+
+  article{
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.08)
+  }
+
+
+
+}
+  .courses.filter-user .categories .filter {
+    position: absolute;
+    right: 20%;
+    cursor: pointer;
+    width: 27px;
+    top: 6px;
+
+
+
+    @media (max-width: $maxMedium) {
+      right: 24%;
+    }
+  }
+
+.section-4.profitional{
+
+
+.testimonials{
+  background-color: $backgroundColor;
+
+  .swiper-wrapper{
+    margin-top: 10px;
+  }
+  .swiper-container {
+
+    width: 100%;
+    //height: 100%;
+    //margin: auto;
+    //position: relative;
+    ////border-radius: 10px;
+    //@media (min-width: $minLarge) {
+    //  width: 35%;
+    //}
+    //@media (max-width:1024px) {
+    //  width: 80%;
+    //}
+    //@media (max-width:$maxMobile) {
+    //  width: 100%;
+    //}
+  }
+
+  .swiper-slide {
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 60px;
+    border: 1px solid $cardColor;
+
+  }
+
+  .swiper-pagination {
+
+    width: 100% !important;
+    height: 10px;
+    margin-top: 3%;
+
+    //.swiper-pagination-bullet {
+    //
+    //  width: 10px;
+    //  height: 10px;
+    //  border-radius: 50%;
+    //  border: 1.3px solid $primaryColor;
+    //  margin: 2px;
+    //  z-index: 2;
+    //
+    //  &-active {
+    //    background-color: $primaryColor;
+    //    transition-duration: 300ms;
+    //  }
+    //}
+
+  }
+.card-feature{
+  //margin: 22px 22px 17px 22px ;
+}
+.card{
+  //border-radius: 10px;
+
+  .card-body{
+  //  position: relative;
+  //  padding: .5rem;
+    padding: 0;
+    .circle-img{
+  //    position: absolute;
+  //    border-radius: 50%;
+  //    top: -5rem;
+      border: 4px solid $cardColor;;
+  //    left: 50%;
+  //    transform: translateX(-50%);
+  //    width: 110px;
+  //    height: 110px;
+  //
+    }
+    .card-title{
+      margin-top: 34px;
+      margin-bottom: 4px;
+    }
+    ul,p{
+      margin-bottom: 0;
+    }
+  }
+}
+}}
+.digits-trainer{
+  color: $primaryColor;
+}
+
+.click-text{
+  h4{
+    font-weight: lighter;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+  i.fa-arrow-right{
+    color: $primaryColor;
+  }
+}

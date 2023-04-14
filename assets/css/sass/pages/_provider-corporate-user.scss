@@ -1,0 +1,27 @@
+.add-trainers{
+
+
+.payment-type ul li {
+  h6 {
+    color: $textBodyColor;
+    font-weight: normal;}
+  &.active{
+    background-color: #E9EAEB;
+  }
+
+ &.active h6 {
+  color: #040506;
+}}}
+
+.modal-added-trainers{
+ .card-img {
+   right: 0;
+   z-index: 444;
+   left: 23px;
+   top: 38px;
+}
+
+  textarea{
+    border-radius: .5rem;
+  }
+}

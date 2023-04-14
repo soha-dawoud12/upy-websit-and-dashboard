@@ -1,0 +1,195 @@
+.attendees{
+  .card{
+    //height: 450px;
+  }
+
+  .card-body{
+    div{
+      color: $primaryColor;
+      font-size: 14px;
+      @media (max-width: $maxMobile) {
+        font-size: 12px;
+      }
+    }
+
+
+  }
+  .attendees-list{
+    @media (max-width: $maxMobile) {
+      span a.text-primary, span{
+        font-size: 13.5px;
+
+      }}
+
+    .card-body{
+
+        overflow-y: auto;
+      max-height: 341px;
+      @media (min-width: $minLarge) {
+        max-height: 486px;
+      }
+    }
+
+  ::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    background-color: #D8E4FF;
+
+  }
+
+  ::-webkit-scrollbar
+  {
+    width: 8px;
+
+
+  }
+
+  ::-webkit-scrollbar-thumb
+  {
+    background-color: $borderColor;
+    border: 2px solid $borderColor;
+    //border-radius: 20px
+  }
+}}
+.attendees-list {
+
+  .attendees-name{
+
+    .row{
+      border-bottom: 1px solid #dfdfdf;
+      padding-bottom: 12px;
+      margin-bottom: 7px;
+      padding-top: 12px
+
+    }
+  }
+  .active-circle {
+    @include circle;
+    background-color: #BAEFA0;
+
+  }
+
+  .not-active-circle {
+    @include circle;
+    background-color: #F98E8E;
+  }
+
+  span.name-student {
+    font-weight: bold;
+    color: $primaryColor;
+    line-height: 1;
+  }
+
+  span.activity-active {
+    @include activity;
+    color: $borderColor;
+
+  }
+  span.activity-not-active {
+    @include activity;
+    color: #F98E8E;;
+
+  }
+}
+
+
+.evaluation-questions{
+  .card-body{}
+  .table-responsive{
+    color: $primaryColor;
+    position: relative;
+    border-collapse: collapse;
+
+
+
+  }
+  .table-with-scroll{
+    max-height: 350px;
+    overflow-y: scroll;
+  }
+  ::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    background-color: #D8E4FF;
+
+  }
+
+  ::-webkit-scrollbar
+  {
+    width: 8px;
+
+
+  }
+
+  ::-webkit-scrollbar-thumb
+  {
+    background-color: $borderColor;
+    border: 2px solid $borderColor;
+    //border-radius: 20px
+  }
+
+
+    thead th {
+      position: sticky;
+      top: -1px;
+background-color: white;
+    }
+
+    th,td {
+//padding: .25rem;
+      font-weight: normal;
+      font-size: 14px;
+      @media (min-width: $minLarge) {
+        font-size: 20px;
+      }
+    }
+
+
+th:first-child{
+  border-right: 1px solid $cardColor;
+}
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(68,104,236,.30);
+  }
+}
+  .evaluation-category{
+    .chart-area{
+      position: relative;
+      flex:0 0 14%;
+      max-width: 14%;
+      @media (max-width: $maxMedium) {
+        flex:0 0 25%;
+        max-width: 25%;
+      }
+      canvas{
+        margin-bottom: 16px;
+      }
+h6{
+  font-weight: normal;
+}
+
+    }
+
+
+
+    .donut-inner {
+      margin-top: 36%;
+      /* margin-bottom: 0; */
+      position: absolute;
+      left: 39%;
+      transform: translate(50,-50);
+    }
+    .donut-inner h4 {
+      font-weight: normal;
+    }
+  }
+
+  header {
+    .container-fluid{
+      padding-right: 5rem;
+      @media (max-width: $maxMobile) {
+        padding-right: 0;
+      }
+
+    }
+  }

@@ -1,0 +1,139 @@
+
+.header-dash{
+    .navbar-nav .dropdown-menu{
+        position: absolute !important;
+        float: initial;
+    }
+
+}
+// Sidebar
+
+
+ul.sidebar{
+    width: $sidebar-base-width;
+    @media (max-width: $minSmall +13) {
+        width: 3.7rem;
+    }
+    min-height: 100vh;
+    border-right: 1.3px solid $borderDash;
+    position: fixed;
+    z-index: 11;
+    background-color: $backgroundColor;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(0%);
+    box-shadow: 0 3px 6px rgba(0,0,0,.08);
+    .nav-item {
+        position: relative;
+
+        &:last-child {
+            top: 8rem;
+            @media (min-width: $minLarge) {
+                top:13rem
+            }
+        }
+
+        .nav-link {
+            text-align: center;
+            padding: 0.75rem 1rem;
+
+            svg{
+
+                path:hover{
+                    fill: $borderColor;
+                }
+            }
+
+        }
+
+        &.active {
+            .nav-link {
+                svg{
+                     path{
+                         fill: $borderColor;
+                     }
+                }
+
+            }
+        }
+.btn-plus{
+    background-color: $primaryColor;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+    }
+}
+
+.dash-home-dropdown{
+    button.dropdown-toggle{
+        width: 239px;
+        text-align: start ;
+        border:1px solid rgba(0,0,0,.15); ;
+        &:after{
+            margin-left: 3.55em;
+    }
+    }
+    .dropdown-menu{
+        min-width: 100%;
+        font-size: 15px;
+    }
+}
+
+
+.dash-board{
+    .dash-average{
+       .card.average{
+            margin: 5px;
+            //flex: 0 0 15%;
+            //max-width: 16%;
+           border: 1px solid $borderDash;
+           @media (max-width: $maxMedium) {
+
+           }
+
+          .card-body{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;padding: 1.25rem 0.2rem
+
+          }
+           span.text-average{
+               font-size: 13px;
+
+           }
+
+           @media (min-width: $minLarge) {
+               &:not(:last-child){
+                   margin: 0 21px 5px 0;
+               }
+
+
+
+                   span.text-average{
+                       font-size: 14px;
+                   }
+               .card-body{
+
+                   padding: 1.25rem
+
+               }
+           }
+    }
+    h3{
+        @include head;
+    }
+}
+
+
+.card-header{
+    background-color: white;
+}}

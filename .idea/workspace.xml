@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e693e7a9-8276-4091-b634-3fa5b4b39435" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1zrzgL0eKWf5kdVBHDCt2bPNE1v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/css/sass/pages" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\upy\assets\css\sass\pages" />
+      <recent name="D:\upy\assets\js" />
+      <recent name="D:\upy\Trainer-Dash" />
+      <recent name="D:\upy\web" />
+      <recent name="D:\upy\Provider-Corporate-User" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\upy\Provider-Corporate-User" />
+      <recent name="D:\upy\Trainee-User" />
+      <recent name="D:\upy\Trainer-Dash" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e693e7a9-8276-4091-b634-3fa5b4b39435" name="Default Changelist" comment="" />
+      <created>1634921111047</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634921111047</updated>
+      <workItem from="1634921113426" duration="3586000" />
+      <workItem from="1634990075559" duration="25347000" />
+      <workItem from="1635069838586" duration="3463000" />
+      <workItem from="1635073432499" duration="28795000" />
+      <workItem from="1635163178822" duration="31043000" />
+      <workItem from="1635314267543" duration="24337000" />
+      <workItem from="1635432883086" duration="3662000" />
+      <workItem from="1635685712602" duration="3795000" />
+      <workItem from="1635694422339" duration="1161000" />
+      <workItem from="1635695649623" duration="2852000" />
+      <workItem from="1635698803678" duration="332000" />
+      <workItem from="1635699211544" duration="638000" />
+      <workItem from="1635700901190" duration="4863000" />
+      <workItem from="1635716954915" duration="158000" />
+      <workItem from="1635717177381" duration="1826000" />
+      <workItem from="1635769253991" duration="597000" />
+      <workItem from="1635772944694" duration="593000" />
+      <workItem from="1635774722535" duration="37000000" />
+      <workItem from="1635938894532" duration="451000" />
+      <workItem from="1635939651792" duration="28619000" />
+      <workItem from="1636016427971" duration="34434000" />
+      <workItem from="1636204715976" duration="48027000" />
+      <workItem from="1636366881607" duration="32202000" />
+      <workItem from="1636463175677" duration="16746000" />
+      <workItem from="1636519357077" duration="26243000" />
+      <workItem from="1636623231609" duration="8038000" />
+      <workItem from="1636907211941" duration="41972000" />
+      <workItem from="1637145497289" duration="57307000" />
+      <workItem from="1637419336573" duration="48232000" />
+      <workItem from="1637645034613" duration="709000" />
+      <workItem from="1637646030772" duration="62351000" />
+      <workItem from="1637953629500" duration="61938000" />
+      <workItem from="1638200117736" duration="78798000" />
+      <workItem from="1638438035722" duration="72243000" />
+      <workItem from="1638659176182" duration="17000" />
+      <workItem from="1638700369818" duration="110422000" />
+      <workItem from="1639285598534" duration="2210000" />
+      <workItem from="1640024804978" duration="1360000" />
+      <workItem from="1669289717096" duration="3499000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/course-lesson.js</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/course-lesson.js</url>
+          <line>94</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
